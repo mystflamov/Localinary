@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5rem;
+  background: white;
+  border-bottom: 4px solid #b3a469;
+  gap: 2rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.logo span {
+  font-weight: 800;
+  color: #b94e26;
+  margin-left: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  list-style: none;
+  margin: 0 2rem;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav-links a.active {
+  color: #facc15;
+  font-weight: bold;
+}
+
+.auth-buttons .login {
+  color: #333;
+}
+
+.auth-buttons .signup {
+  background: #b3a469;
+  color: white;
+  padding: 0.4rem 2rem;
+  border-radius: 25px;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.page-container {
+  padding: 0 4rem;
+  background-color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 2rem 2.5rem 2rem;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 4.0rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text .orange {
+  color: #b94e26;
+}
+
+.hero-text .gold {
+  color: #d2a72c;
+}
+
+.hero-text p {
+  color: #444;
+  max-width: 80%;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.search-container {
+  display: flex;
+  border: 2px solid #b3a469;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.search-container input {
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.6rem 1rem;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+}
+
+.search-container button {
+  font-family: 'Quicksand', sans-serif;
+  background: none;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.get-started-btn {
+  font-family: 'Quicksand', sans-serif;
+  display: inline-block;
+  background: #b94e26;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-images {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 30px;
+}
+
+.hero-images img {
+  width: 230px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.hero-images img:nth-child(2) {
+  height: 550px;
+  margin-top: -50px;
+}
+
+.footer {
+  background-color: #b94e26;
+  color: white;
+  padding: 2rem 6rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 4px solid #b3a469;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}

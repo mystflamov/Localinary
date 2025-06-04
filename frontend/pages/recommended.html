@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Localinary | Recommended</title>
+  <link rel="stylesheet" href="../styles/recommended.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg style="display: none;">
+    <!-- FULL STAR -->
+    <symbol id="star-full" viewBox="0 0 24 24" fill="#f5d000">
+      <path d="M12 .587l3.668 7.431L24 9.753l-6 5.847 1.416 8.263L12 18.896l-7.416 4.967L6 15.6 0 9.753l8.332-1.735z"/>
+    </symbol>
+
+    <!-- EMPTY STAR -->
+    <symbol id="star-empty" viewBox="0 0 24 24" fill="none" stroke="#f5d000" stroke-width="1.5">
+      <path d="M12 2l3.09 6.26 6.91 1-5 4.87L18.18 22 12 18.27 5.82 22l1.18-7.87-5-4.87 6.91-1z"/>
+    </symbol>
+  </svg>
+
+  <header>
+    <nav class="nav-bar">
+      <a href="home.html" class="logo">
+        <img src="../assets/images/logo.png" alt="Localinary Logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="plan.html">Plan</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Log in</a>
+        <a href="signup.html" class="signup">Sign up</a>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="tabs-container">
+    <a href="recommended.html" class="tab-link">
+      <img src="../assets/icons/recommended.png" alt="Recommended Icon">
+      <span>RECOMMENDED</span>
+    </a>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search dish or spot..." />
+      <img src="../assets/icons/search.png" alt="Search" class="search-icon" />
+    </div>
+  </nav>
+
+  <main>
+    <section class="locations-container">
+      <div class="message">
+        <p class="trip-message" id="tripMessage"></p>
+        <div class="refresh-button" id="refreshMessage" title="Shuffle message" role="button" tabindex="0">
+          <svg class="refresh-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.05 11a9 9 0 1 1 .5 4M4 4v7h7" stroke="currentColor" />
+          </svg>
+        </div>
+      </div>
+      
+      <div class="location-details">
+        <div class="left-section">
+          <div class="location-block current">
+            <h4>🧭 Current Location</h4>
+            <input type="text" id="currentInput" placeholder="Enter current location" />
+          </div>
+
+          <div class="swap-wrapper">
+            <button class="swap-button" id="swapButton" aria-label="Swap locations">
+              <svg class="swap-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 7h13M4 7l3-3m-3 3l3 3M20 17H7m13 0l-3 3m3-3l-3-3" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="location-block target">
+            <h4>🏁 Target Destination</h4>
+            <input type="text" id="destinationInput" placeholder="Enter target destination" />
+          </div>
+        </div>
+
+        <div class="right-section">
+          <div class="travel-info empty" id="travelInfo">
+            ✨ Ready to Localinary-fy your trip? Let’s gooo!◝(ᵔᗜᵔ)◜
+          </div>
+
+          <div class="button-group">
+            <a id="viewMapsButton" class="map-button disabled">View Google Maps</a>
+            <a href="plan.html" class="plan-button">Go to Plan →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards-container">
+      <!-- DUMPLINGS -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/dumplings.png" alt="Dumplings">
+
+        <div class="card-details">
+          <h2>DUMPLINGS</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Dong Bei Dumplings</span><br>
+                  <span class="location">Binondo, Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:30 AM - 7:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Wai Ying Fastfood</span><br>
+                  <span class="location">Binondo, Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+        
+          <a href="dumplings-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- MAMI -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/mami.png" alt="Mami">
+
+        <div class="card-details">
+          <h2>MAMI</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Masuki</span><br>
+                  <span class="location">Binondo, Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Ling Nam</span><br>
+                  <span class="location">Binondo, Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <a href="mami-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- SIOPAO -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/siopao.png" alt="Siopao">
+
+        <div class="card-details">
+          <h2>SIOPAO</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Shanghai Fried Siopao</span><br>
+                  <span class="location">Binondo, Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 6:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Chuan Kee Chinese Fast Food</span><br>
+                  <span class="location">Binondo, Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 6:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+        
+          <a href="siopao-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- NATIONAL MUSEUM -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/national-museum.png" alt="National Museum">
+
+        <div class="card-details">
+          <h2>NATIONAL MUSEUM</h2>
+
+          <div class="site">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Rizal Avenue, Manila</span><br>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+
+          <a href="national-museum-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      <!-- FORT SANTIAGO -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/fort-santiago.png" alt="Fort Santiago">
+
+        <div class="card-details">
+          <h2>FORT SANTIAGO</h2>
+
+          <div class="site">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Intramuros, Manila</span><br>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:00 AM - 11:00 PM</span>
+            </div>
+          </div>
+
+          <a href="fort-santiago-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      <!-- RIZAL PARK -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/rizal-park.png" alt="Rizal Park">
+
+        <div class="card-details">
+          <h2>RIZAL PARK</h2>
+
+          <div class="site">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Roxas Boulevard, Manila</span><br>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 24 hours</span>
+            </div>
+          </div>
+
+          <a href="rizal-park-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../scripts/recommended.js"></script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Localinary. All rights reserved.</p>
+      <p>Cooked with code & seasoned with style — Localicrew ᕦ( •̀ᗝ•́ )૭</p>
+    </div>
+  </footer>
+</body>
+</html>

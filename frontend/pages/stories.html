@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Localinary | Stories</title>
+  <link rel="stylesheet" href="../styles/stories.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg style="display: none;">
+    <!-- FULL STAR -->
+    <symbol id="star-full" viewBox="0 0 24 24" fill="#f5d000">
+      <path d="M12 .587l3.668 7.431L24 9.753l-6 5.847 1.416 8.263L12 18.896l-7.416 4.967L6 15.6 0 9.753l8.332-1.735z"/>
+    </symbol>
+
+    <!-- HALF STAR -->
+    <symbol id="star-half" viewBox="0 0 24 24" fill="#f5d000">
+      <path d="M12 .587l3.668 7.431L24 9.753l-6 5.847 1.416 8.263L12 18.896V.587z"/>
+      <path d="M12 18.896l-7.416 4.967L6 15.6 0 9.753l8.332-1.735L12 .587v18.309z" fill="none" stroke="#f5d000" stroke-width="1.5"/>
+    </symbol>
+
+    <!-- EMPTY STAR -->
+    <symbol id="star-empty" viewBox="0 0 24 24" fill="none" stroke="#f5d000" stroke-width="1.5">
+      <path d="M12 2l3.09 6.26 6.91 1-5 4.87L18.18 22 12 18.27 5.82 22l1.18-7.87-5-4.87 6.91-1z"/>
+    </symbol>
+  </svg>
+
+  <header>
+    <nav class="nav-bar">
+      <a href="home.html" class="logo">
+        <img src="../assets/images/logo.png" alt="Localinary Logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="plan.html">Plan</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stories.html" class="active">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Log in</a>
+        <a href="signup.html" class="signup">Sign up</a>
+      </div>
+    </nav>
+  </header>
+
+  <h1 class="header-banner">
+    <span class="caption">LOVED IT? <span class="highlight-red">LET OTHERS KNOW.</span></span>
+  </h1>
+
+  <section class="client-experiences">
+    <h1>Client Experiences</h1>
+    <div class="rating-summary-container">
+
+      <!-- LEFT: Rating Breakdown -->
+      <div class="rating-breakdown">
+        <div class="rating-row">
+          <span class="rating-label">FIVE</span>
+          <svg class="rating-star" viewBox="0 0 24 24"><use href="#star-full" /></svg>
+          <div class="rating-bar-track">
+            <div class="rating-bar-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="rating-row">
+          <span class="rating-label">FOUR</span>
+          <svg class="rating-star" viewBox="0 0 24 24"><use href="#star-full" /></svg>
+          <div class="rating-bar-track">
+            <div class="rating-bar-fill" style="width: 60%;"></div>
+          </div>
+        </div>
+
+        <div class="rating-row">
+          <span class="rating-label">THREE</span>
+          <svg class="rating-star" viewBox="0 0 24 24"><use href="#star-full" /></svg>
+          <div class="rating-bar-track">
+            <div class="rating-bar-fill" style="width: 40%;"></div>
+          </div>
+        </div>
+
+        <div class="rating-row">
+          <span class="rating-label">TWO</span>
+          <svg class="rating-star" viewBox="0 0 24 24"><use href="#star-full" /></svg>
+          <div class="rating-bar-track">
+            <div class="rating-bar-fill" style="width: 20%;"></div>
+          </div>
+        </div>
+
+        <div class="rating-row">
+          <span class="rating-label">ONE</span>
+          <svg class="rating-star" viewBox="0 0 24 24"><use href="#star-full" /></svg>
+          <div class="rating-bar-track">
+            <div class="rating-bar-fill" style="width: 10%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Summary Box -->
+      <div class="summary-box">
+        <div class="summary-rating">4.5</div>
+        <span class="stars" data-rating="4.5"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>Recent Feedbacks <a href="../pages/more-reviews.html">See more reviews</a></h2>
+
+    <!-- Review from Camille - Tagaytay City-->
+    <section class="reviews-grid">
+      <div class="review-item camille">
+        <img src="../assets/icons/quote.png" alt="Quote" class="quote-icon" />
+
+        <div class="review-header">
+          <div class="rating-circle">C</div>
+          <div class="review-meta">
+            <p class="name"><strong>Camille</strong></p>
+            <small class="date-and-location">02/11/2024 | Tagaytay City</small>
+          </div>
+        </div>
+
+        <h3 class="review-rating">
+          <span class="stars" data-rating="5"></span>
+        </h3>
+
+        <p class="review-dish">
+          🍽️ <strong>Lomi</strong> from <strong>Lomi King</strong><br />
+        </p>
+        
+        <p class="review-text">
+          A warm, comforting bowl of Lomi is perfect for rainy days. The rich, thick broth and generous toppings brought me back to childhood memories. Lomi King lives up to its name — fast service, friendly staff, and a flavor that lingers pleasantly even after your last spoonful. Highly recommended for both locals and tourists looking for authentic Batangueño flavor!
+        </p>
+      </div>
+
+      <!-- Review from Penelope - San Fernando, Laguna -->
+      <div class="review-item penelope">
+        <img src="../assets/icons/quote.png" alt="Quote" class="quote-icon" />
+
+        <div class="review-header">
+          <div class="rating-circle">P</div>
+          <div class="review-meta">
+            <p class="name"><strong>Penelope</strong></p>
+            <small class="date-and-location">12/22/2023 | San Fernando, Laguna</small>
+          </div>
+        </div>
+
+        <h3 class="review-rating">
+          <span class="stars" data-rating="4.9"></span>
+        </h3>
+        
+        <p class="review-spot">
+          📍 <strong>Boracay Newcoast Beach</strong><br />
+        </p>
+
+        <p class="review-text">
+          White sand, turquoise waters, and unforgettable sunsets—Boracay is a tropical paradise. Whether you're into water sports or just relaxing by the shore, this island delivers the ultimate beach getaway.
+        </p>
+      </div>
+
+      <!-- Review from Kimberly - Cagayan de Oro -->
+      <div class="review-item kimberly">
+        <img src="../assets/icons/quote.png" alt="Quote" class="quote-icon" />
+
+        <div class="review-header">
+          <div class="rating-circle">K</div>
+          <div class="review-meta">
+            <p class="name"><strong>Kimberly</strong></p>
+            <small class="date-and-location">10/11/2024 | Cagayan de Oro</small>
+          </div>
+        </div>
+
+        <h3 class="review-rating">
+          <span class="stars" data-rating="4"></span>
+        </h3>
+
+        <p class="review-dish">
+          🍽️ <strong>Kinilaw</strong> from <strong>Kaon Ta Sa Subli</strong><br />
+        </p>
+
+        <p class="review-text">
+          Kinilaw is the Filipino take on ceviche—fresh, tangy, and bursting with flavor. The raw fish marinated in vinegar with onions, chili, and ginger offers a refreshing bite that’s both healthy and zesty. Perfect as an appetizer or pulutan!
+        </p>
+      </div>
+
+      <!-- Review from Rav - Cainta, Rizal -->
+      <div class="review-item rav">
+        <img src="../assets/icons/quote.png" alt="Quote" class="quote-icon" />
+
+        <div class="review-header">
+          <div class="rating-circle">R</div>
+          <div class="review-meta">
+            <p class="name"><strong>Rav</strong></p>
+            <small class="date-and-location">11/19/2024 | Cainta, Rizal</small>
+          </div>
+        </div>
+
+        <h3 class="review-rating">
+          <span class="stars" data-rating="4"></span>
+        </h3>
+
+        <p class="review-spot">
+          📍 <strong>Calle Crisologo</strong><br />
+        </p>
+
+        <p class="review-text">
+          Calle Crisologo is a must-visit for history buffs and culture enthusiasts. The well-preserved Spanish colonial architecture and cobblestone streets transport you back in time. Don't forget to try the local delicacies at the nearby eateries!
+        </p>
+      </div>
+
+      <!-- Review from Zia - Norzagaray, Laguna -->
+      <div class="review-item zia">
+        <img src="../assets/icons/quote.png" alt="Quote" class="quote-icon" />
+
+        <div class="review-header">
+          <div class="rating-circle">Z</div>
+          <div class="review-meta">
+            <p class="name"><strong>Zia</strong></p>
+            <small class="date-and-location">03/04/2025 | Norzagaray, Laguna</small>
+          </div>
+        </div>
+
+        <h3 class="review-rating">
+          <span class="stars" data-rating="4"></span>
+        </h3>
+
+        <p class="review-spot">
+          🍽️ <strong>Apple Empanada</strong> from <strong>Casa Luisa</strong><br />
+        </p>
+        <p class="review-text">
+          This twist on the classic empanada is a delightful surprise! The flaky crust pairs beautifully with the sweet and slightly tart apple filling. It's like biting into a mini apple pie with a Pinoy touch—great for snacks or dessert.
+        </p>
+      </div>
+
+      <!-- Review from Fiona - General Trias, Cavite -->
+      <div class="review-item fiona">
+        <img src="../assets/icons/quote.png" alt="Quote" class="quote-icon" />
+
+        <div class="review-header">
+          <div class="rating-circle">F</div>
+          <div class="review-meta">
+            <p class="name"><strong>Fiona</strong></p>
+            <small class="date-and-location">02/14/2025 | General Trias, Cavite</small>
+          </div>
+        </div>
+
+        <h3 class="review-rating">
+          <span class="stars" data-rating="5"></span>
+        </h3>
+
+        <p class="review-spot">
+          📍 <strong>Kayangan Lake</strong><br />
+        </p>
+
+        <p class="review-text">
+          Coron is a dream for divers and nature lovers. The crystal-clear lagoons, shipwreck dive sites, and limestone cliffs make it one of the most stunning and serene places in the Philippines. Truly picture-perfect!
+        </p>
+      </div>
+
+      <div class="review-form">
+        <h2>Add a Review</h2>
+
+          <!-- Ask user what they want to review -->
+          <label for="review-type">Option:</label>
+          <select id="review-type" name="review-type" onchange="toggleForm()" required>
+            <option value="" disabled selected hidden>...</option>
+            <option value="dish">Dish</option>
+            <option value="spot">Spot</option>
+          </select>
+
+          <div class="row-flex">
+            <div class="rating-wrapper">
+              <label class="rating-label">Rating:</label>
+              <div class="stars rating-input" data-rating="0" data-input-name="userRating">
+                <svg class="svg-star" data-value="1"><use xlink:href="#star-empty" /></svg>
+                <svg class="svg-star" data-value="2"><use xlink:href="#star-empty" /></svg>
+                <svg class="svg-star" data-value="3"><use xlink:href="#star-empty" /></svg>
+                <svg class="svg-star" data-value="4"><use xlink:href="#star-empty" /></svg>
+                <svg class="svg-star" data-value="5"><use xlink:href="#star-empty" /></svg>
+              </div>
+              <input type="hidden" name="userRating" />
+            </div>
+
+            <div class="date-wrapper">
+              <label class="date-label">Date:</label>
+              <input type="date" id="review-date" name="review-date" required />
+            </div>
+          </div>
+
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="text" name="location" placeholder="Your Location" />
+
+          <!-- Dish Review Fields -->
+          <div id="dish-form" class="hidden">
+            <input type="text" name="dishName" placeholder="Dish Name" />
+            <input type="text" name="restaurant" placeholder="Restaurant Name" />
+            <textarea name="dishReview" placeholder="Write your review about the dish..."></textarea>
+          </div>
+
+          <!-- Spot Review Fields -->
+          <div id="spot-form" class="hidden">
+            <input type="text" name="spotName" placeholder="Spot Name" />  
+            <textarea name="spotReview" placeholder="Write your review about the spot..."></textarea>
+          </div>
+
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+  </section>
+
+  <script src="../scripts/stories.js"></script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Localinary. All rights reserved.</p>
+      <p>Cooked with code & seasoned with style — Localicrew ᕦ( •̀ᗝ•́ )૭</p>
+    </div>
+  </footer>
+</body>
+</html>

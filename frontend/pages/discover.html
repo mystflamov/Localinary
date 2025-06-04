@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Localinary | Discover</title>
+  <link rel="stylesheet" href="../styles/discover.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg style="display: none;">
+    <!-- FULL STAR -->
+    <symbol id="star-full" viewBox="0 0 24 24" fill="#f5d000">
+      <path d="M12 .587l3.668 7.431L24 9.753l-6 5.847 1.416 8.263L12 18.896l-7.416 4.967L6 15.6 0 9.753l8.332-1.735z"/>
+    </symbol>
+
+    <!-- EMPTY STAR -->
+    <symbol id="star-empty" viewBox="0 0 24 24" fill="none" stroke="#f5d000" stroke-width="1.5">
+      <path d="M12 2l3.09 6.26 6.91 1-5 4.87L18.18 22 12 18.27 5.82 22l1.18-7.87-5-4.87 6.91-1z"/>
+    </symbol>
+  </svg>
+
+  <header>
+    <nav class="nav-bar">
+      <a href="home.html" class="logo">
+        <img src="../assets/images/logo.png" alt="Localinary Logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="plan.html">Plan</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Log in</a>
+        <a href="signup.html" class="signup">Sign up</a>
+      </div>
+    </nav>
+  </header>
+
+  <h1 class="header-banner">
+    <span class="caption">START <span class="highlight-yellow">PLANNING</span> AND 
+    <span class="highlight-yellow">DISCOVER</span> LOCAL FLAVORS</span>
+  </h1>
+
+  <nav class="tabs-container">
+    <a href="dishes.html" class="tab-link">
+      <img src="../assets/icons/dishes.png" alt="Dishes Icon">
+      <span>DISHES</span>
+    </a>
+
+    <a href="spots.html" class="tab-link">
+      <img src="../assets/icons/spots.png" alt="Spots Icon">
+      <span>SPOTS</span>
+    </a>
+
+    <a href="recommended.html" class="tab-link">
+      <img src="../assets/icons/recommended.png" alt="Recommended Icon">
+      <span>RECOMMENDED</span>
+    </a>
+  </nav>
+
+  <main>
+    <section class="cards-container">
+      <!-- LOMI -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/lomi.png" alt="Lomi">
+        
+        <div class="card-details">
+          <h2>LOMI</h2>
+          <span class="stars" data-rating="5"></span>
+
+          <div class="card-info">
+            <span class="icon">📍</span>
+            <span class="text">
+              <span class="place">Sholem Batangas Halo-Halo</span><br>
+              <span class="location">Mactan Airbase, Lapu-Lapu City</span>
+            </span>
+          </div>
+
+          <div class="card-info">
+            <span class="icon">🕒</span>
+            <span class="text">Open Daily: 6:00 AM - 9:00 PM</span>
+          </div>
+        
+          <a href="lomi-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- BULALO -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/bulalo.png" alt="Bulalo">
+        
+        <div class="card-details">
+          <h2>BULALO</h2>
+          <span class="stars" data-rating="5"></span>
+          
+          <div class="card-info">
+            <span class="icon">📍</span>
+            <span class="text">
+              <span class="place">Bulalo Point Tagaytay</span><br>
+              <span class="location">Nasugbu Highway, Tagaytay</span>
+            </span>
+          </div>
+
+          <div class="card-info">
+            <span class="icon">🕒</span>
+            <span class="text">Open Daily: 7:00 AM - 10:00 PM</span>
+          </div>
+
+          <a href="bulalo-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- BICOL EXPRESS -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/bicol-express.png" alt="Bicol Express">
+        
+        <div class="card-details">
+          <h2>BICOL EXPRESS</h2>
+          <span class="stars" data-rating="4"></span>
+        
+          <div class="card-info">
+            <span class="icon">📍</span>
+            <span class="text">
+              <span class="place">Legazpi Four Seasons Restaurant</span><br>
+              <span class="location">Legazpi City, Albay</span>
+            </span>
+          </div>
+
+          <div class="card-info">
+            <span class="icon">🕒</span>
+            <span class="text">Open Daily: 11:00 AM - 10:00 PM</span>
+          </div>
+        
+          <a href="bicol-express-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- BORACAY NEWCOAST BEACH -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/boracay-newcoast-beach.png" alt="Boracay Newcoast Beach">
+
+        <div class="card-details">
+          <h2>BORACAY NEWCOAST BEACH</h2>
+          <span class="stars" data-rating="5"></span>
+
+          <div class="card-info">
+            <span class="icon">📍</span>
+            <span class="text">
+              <span class="place">Boracay Newcoast, Malay, Aklan</span><br>
+            </span>
+          </div>
+          
+          <div class="card-info">
+            <span class="icon">🕒</span>
+            <span class="text">Open Daily: 7:00 AM - 9:00 PM</span>
+          </div>
+
+          <a href="boracay-newcoast-beach-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      <!-- KAYANGAN LAKE -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/kayangan-lake.png" alt="Kayangan Lake">
+
+        <div class="card-details">
+          <h2>KAYANGAN LAKE</h2>
+          <span class="stars" data-rating="5"></span>
+
+        <div class="card-info">
+          <span class="icon">📍</span>
+          <span class="text">
+            <span class="place">Coron, Palawan</span><br>
+          </span>
+        </div>
+
+        <div class="card-info">
+          <span class="icon">🕒</span>
+          <span class="text">Open Daily: 7:00 AM - 9:00 PM</span>
+        </div>
+        
+          <a href="kayangan-lake-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      <!-- OCEAN ADVENTURE -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/ocean-adventure.png" alt="Ocean Adventure">
+        <div class="card-details">
+          <h2>OCEAN ADVENTURE</h2>
+          <span class="stars" data-rating="5"></span>
+
+          <div class="card-info">
+            <span class="icon">📍</span>
+            <span class="text">
+              <span class="place">Subic Bay, Zambales</span><br>
+            </span>
+          </div>
+
+          <div class="card-info">
+            <span class="icon">🕒</span>
+            <span class="text">Open Daily: 7:00 AM - 9:00 PM</span>
+          </div>
+
+          <a href="ocean-adventure-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <h1 class="footer-banner">
+    <button class="arrow-button left-arrow">&lt;&lt;</button>
+    <span>BEST PICKS AROUND YOU</span>
+    <button class="arrow-button right-arrow">&gt;&gt;</button>
+  </h1>
+
+  <script src="../scripts/stars.js"></script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Localinary. All rights reserved.</p>
+      <p>Cooked with code & seasoned with style — Localicrew ᕦ( •̀ᗝ•́ )૭</p>
+    </div>
+  </footer>
+</body>
+</html>

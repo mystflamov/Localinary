@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Localinary | More Dishes</title>
+  <link rel="stylesheet" href="../styles/more-dishes.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg style="display: none;">
+    <!-- FULL STAR -->
+    <symbol id="star-full" viewBox="0 0 24 24" fill="#f5d000">
+      <path d="M12 .587l3.668 7.431L24 9.753l-6 5.847 1.416 8.263L12 18.896l-7.416 4.967L6 15.6 0 9.753l8.332-1.735z"/>
+    </symbol>
+
+    <!-- EMPTY STAR -->
+    <symbol id="star-empty" viewBox="0 0 24 24" fill="none" stroke="#f5d000" stroke-width="1.5">
+      <path d="M12 2l3.09 6.26 6.91 1-5 4.87L18.18 22 12 18.27 5.82 22l1.18-7.87-5-4.87 6.91-1z"/>
+    </symbol>
+  </svg>
+
+  <header>
+    <nav class="nav-bar">
+      <a href="home.html" class="logo">
+        <img src="../assets/images/logo.png" alt="Localinary Logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="plan.html">Plan</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Log in</a>
+        <a href="signup.html" class="signup">Sign up</a>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="tabs-container">
+    <a href="dishes.html" class="tab-link">
+      <img src="../assets/icons/dishes.png" alt="Dishes Icon">
+      <span>DISHES</span>
+    </a>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search dish..." />
+      <img src="../assets/icons/search.png" alt="Search" class="search-icon" />
+    </div>
+  </nav>
+
+  <h1 class="header-title">
+    <img src="../assets/icons/cutlery.png" alt="Cutlery Icon" class="header-icon" />
+    <span class="highlight-red">Flavors</span><span class="caption"> of the </span><span class="highlight-red">Philippines</span>
+    <img src="../assets/icons/cutlery.png" alt="Cutlery Icon" class="header-icon" /><br>
+    <span class="subtitle">Discover Iconic <span class="highlight-green">Dishes</span> and Local <span class="highlight-green">Delights</span></span>
+  </h1>
+
+  <main>
+    <section class="cards-container">
+      <!-- LOMI -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/lomi.png" alt="Lomi">
+        
+        <div class="card-details">
+          <h2>LOMI</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Sholem Batangas Halo-Halo</span><br>
+                  <span class="location">Lapu-Lapu City, Cebu</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 6:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Lomi King</span><br>
+                  <span class="location">Lipa City, Batangas</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 6:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+          
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Casa Rap</span><br>
+                  <span class="location">San Juan, Batangas</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 6:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+          
+          <a href="lomi-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- BULALO -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/bulalo.png" alt="Bulalo">
+        
+        <div class="card-details">
+          <h2>BULALO</h2>
+          
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Bulalo Point</span><br>
+                  <span class="location">Tagaytay City, Cavite</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Mahogany Market Eateries</span><br>
+                  <span class="location">Tagaytay City, Cavite</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Jaytee's Classic Filipino Cuisine</span><br>
+                  <span class="location">Tagaytay City, Cavite</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 10:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <a href="bulalo-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- BICOL EXPRESS -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/bicol-express.png" alt="Bicol Express">
+        
+        <div class="card-details">
+          <h2>BICOL EXPRESS</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Legazpi Four Seasons Restaurant</span><br>
+                  <span class="location">Legazpi City, Albay</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">1st Colonial Grill</span><br>
+                  <span class="location">Legazpi City, Albay</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 6:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Bob Marlin</span><br>
+                  <span class="location">Naga City, Camarines Sur</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 7:00 AM - 7:00 PM</span>
+            </div>
+          </div>
+        
+          <a href="bicol-express-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+      
+      <!-- SEAFOOD -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/seafood.png" alt="Seafood">
+        
+        <div class="card-details">
+          <h2>SEAFOOD</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Seaside Dampa Paluto</span><br>
+                  <span class="location">Cebu City, Cebu</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 10:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">1st Colonial Grill</span><br>
+                  <span class="location">Legazpi City, Albay</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 6:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Isdaan Floating Restaurant</span><br>
+                  <span class="location">Gerona, Tarlac</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+        
+          <a href="seafood-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- CRISPY PATA -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/crispy-pata.png" alt="Crispy Pata">
+        
+        <div class="card-details">
+          <h2>CRISPY PATA</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Mesa Filipino Moderne</span><br>
+                  <span class="location">Multiple Locations</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Ombu Kusina</span><br>
+                  <span class="location">Quezon City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 10:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Judy Ann's Crispy Pata</span><br>
+                  <span class="location">Malabon City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+        
+          <a href="crispy-pata-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- LECHON -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/lechon.png" alt="Lechon">
+        
+        <div class="card-details">
+          <h2>LECHON</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Lydia's Lechon</span><br>
+                  <span class="location">Parañaque City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Rico's Lechon</span><br>
+                  <span class="location">Makati City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 6:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Elar's Lechon</span><br>
+                  <span class="location">Quezon City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 7:00 AM - 7:00 PM</span>
+            </div>
+          </div>
+        
+          <a href="lechon-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- SISIG -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/sisig.png" alt="Sisig">
+        
+        <div class="card-details">
+          <h2>SISIG</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Mila's Tokwa't Baboy</span><br>
+                  <span class="location">Angeles City, Pampanga</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 10:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Aling Lucing's Sisig</span><br>
+                  <span class="location">Angeles City, Pampanga</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Aysee</span><br>
+                  <span class="location">Pasig City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 7:00 PM</span>
+            </div>
+          </div>
+        
+          <a href="sisig-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- LA PAZ BATCHOY -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/la-paz-batchoy.png" alt="La Paz Batchoy">
+
+        <div class="card-details">
+          <h2>LA PAZ BATCHOY</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Deco's La Paz Batchoy</span><br>
+                  <span class="location">Iloilo City, Iloilo</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 10:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Ted's Oldtimer La Paz Batchoy</span><br>
+                  <span class="location">Multiple Branches</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Netong's Original La Paz Batchoy</span><br>
+                  <span class="location">Iloilo City, Iloilo</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 10:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+        
+          <a href="la-paz-batchoy-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- KINILAW -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/kinilaw.png" alt="Kinilaw">
+
+        <div class="card-details">
+          <h2>KINILAW</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Isla Sugbu Seafood City</span><br>
+                  <span class="location">Cebu City, Cebu</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:00 AM - 8:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Lab-as Seafood Restaurant</span><br>
+                  <span class="location">Dumaguete City, Negros Oriental</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Kaon Ta Sa Subli</span><br>
+                  <span class="location">Cagayan de Oro City, Misamis Oriental</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+        
+          <a href="kinilaw-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- LAING -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/laing.png" alt="Laing">
+
+        <div class="card-details">
+          <h2>LAING</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Small Talk Café</span><br>
+                  <span class="location">Legazpi City, Albay</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 7:00 AM - 7:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">1st Colonial Grill</span><br>
+                  <span class="location">Legazpi City, Albay</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:00 AM - 8:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Bicol Blends Café</span><br>
+                  <span class="location">Naga City, Camarines Sur</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 7:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <a href="laing-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- KARE-KARE -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/kare-kare.png" alt="Kare-Kare">
+
+        <div class="card-details">
+          <h2>KARE-KARE</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Cafe Juanita</span><br>
+                  <span class="location">Pasig City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="3"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 7:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Kamayan sa Palaisdaan</span><br>
+                  <span class="location">Tayabas City, Quezon</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:00 AM - 8:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Dampa Seaside</span><br>
+                  <span class="location">Pasay City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="4"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 10:00 AM - 10:00 PM</span>
+            </div>
+          </div>
+
+          <a href="kare-kare-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+      <!-- APPLE EMPANADA -->
+      <div class="card dish-card" data-type="dish">
+        <img src="../assets/images/apple-empanada.png" alt="Apple Empanada">
+
+        <div class="card-details">
+          <h2>APPLE EMPANADA</h2>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Casa Luisa</span><br>
+                  <span class="location">San Pedro, Laguna</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="3"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 7:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Norma Castro's Empanada</span><br>
+                  <span class="location">San Juan City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:00 AM - 8:00 PM</span>
+            </div>
+          </div>
+
+          <div class="restaurant">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Half Saints</span><br>
+                  <span class="location">Quezon City, Metro Manila</span>
+                </span>
+              </div>
+              <span class="stars" data-rating="3"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 7:00 PM</span>
+            </div>
+          </div>
+
+          <a href="apple-empanada-details.html" class="card-button">More &gt;</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="../scripts/stars.js"></script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Localinary. All rights reserved.</p>
+      <p>Cooked with code & seasoned with style — Localicrew ᕦ( •̀ᗝ•́ )૭</p>
+    </div>
+  </footer>
+</body>
+</html>

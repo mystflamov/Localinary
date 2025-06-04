@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Localinary | Spots</title>
+  <link rel="stylesheet" href="../styles/spots.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg style="display: none;">
+    <!-- FULL STAR -->
+    <symbol id="star-full" viewBox="0 0 24 24" fill="#f5d000">
+      <path d="M12 .587l3.668 7.431L24 9.753l-6 5.847 1.416 8.263L12 18.896l-7.416 4.967L6 15.6 0 9.753l8.332-1.735z"/>
+    </symbol>
+
+    <!-- EMPTY STAR -->
+    <symbol id="star-empty" viewBox="0 0 24 24" fill="none" stroke="#f5d000" stroke-width="1.5">
+      <path d="M12 2l3.09 6.26 6.91 1-5 4.87L18.18 22 12 18.27 5.82 22l1.18-7.87-5-4.87 6.91-1z"/>
+    </symbol>
+  </svg>
+
+  <header>
+    <nav class="nav-bar">
+      <a href="home.html" class="logo">
+        <img src="../assets/images/logo.png" alt="Localinary Logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="plan.html">Plan</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Log in</a>
+        <a href="signup.html" class="signup">Sign up</a>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="tabs-container">
+    <a href="spots.html" class="tab-link">
+      <img src="../assets/icons/spots.png" alt="Spots Icon">
+      <span>SPOTS</span>
+    </a>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search spot..." />
+      <img src="../assets/icons/search.png" alt="Search" class="search-icon" />
+    </div>
+  </nav>
+
+  <main>
+    <section class="cards-container">
+      <!-- BORACAY NEWCOAST BEACH -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/boracay-newcoast-beach.png" alt="Boracay Newcoast Beach">
+
+        <div class="card-details">
+          <h2>BORACAY NEWCOAST BEACH</h2>
+
+          <div class="site">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Malay, Aklan</span><br>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 24 hours</span>
+            </div>
+          </div>
+
+          <a href="boracay-newcoast-beach-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      <!-- KAYANGAN LAKE -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/kayangan-lake.png" alt="Kayangan Lake">
+
+        <div class="card-details">
+          <h2>KAYANGAN LAKE</h2>
+
+          <div class="site">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Coron, Palawan</span><br>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 7:00 AM - 5:00 PM</span>
+            </div>
+          </div>
+
+          <a href="kayangan-lake-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      <!-- OCEAN ADVENTURE -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/ocean-adventure.png" alt="Ocean Adventure">
+
+        <div class="card-details">
+          <h2>OCEAN ADVENTURE</h2>
+
+          <div class="site">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Subic Bay, Zambales</span><br>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 9:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+
+          <a href="ocean-adventure-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      <!-- VAYANG ROLLING HILLS -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/vayang-rolling-hills.png" alt="Vayang Rolling Hills">
+
+        <div class="card-details">
+          <h2>VAYANG ROLLING HILLS</h2>
+
+          <div class="site">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Basco, Batanes</span><br>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 5:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+
+          <a href="vayang-rolling-hills-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      <!-- CALLE CRISOLOGO -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/calle-crisologo.png" alt="Calle Crisologo">
+
+        <div class="card-details">
+          <h2>CALLE CRISOLOGO</h2>
+
+          <div class="site">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Vigan City, Ilocos Sur</span><br>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 24 hours</span>
+            </div>
+          </div>
+
+          <a href="calle-crisologo-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      <!-- CHOCOLATE HILLS -->
+      <div class="card spot-card" data-type="spot">
+        <img src="../assets/images/chocolate-hills.png" alt="Chocolate Hills">
+
+        <div class="card-details">
+          <h2>CHOCOLATE HILLS</h2>
+
+          <div class="site">
+            <div class="card-info row-between">
+              <div class="left-info">
+                <span class="icon">📍</span>
+                <span class="text">
+                  <span class="place">Carmen, Bohol</span><br>
+                </span>
+              </div>
+              <span class="stars" data-rating="5"></span>
+            </div>
+
+            <div class="card-info">
+              <span class="icon">🕒</span>
+              <span class="text">Open Daily: 8:00 AM - 5:00 PM</span>
+            </div>
+          </div>
+
+          <a href="chocolate-hills-details.html" class="card-button">Check Deal &gt;</a>
+        </div>
+      </div>
+
+      </section>
+  </main>
+
+  <div class="view-more-container">
+    <a href="../pages/more-spots.html" class="view-more">
+      <span class="arrow">&lt;&lt;</span>
+      <span class="text">VIEW MORE SPOTS</span>
+      <span class="arrow">&gt;&gt;</span>
+    </a>
+  </div>
+
+  <script src="../scripts/stars.js"></script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Localinary. All rights reserved.</p>
+      <p>Cooked with code & seasoned with style — Localicrew ᕦ( •̀ᗝ•́ )૭</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Localinary | Sign Up</title>
+  <link rel="stylesheet" href="../styles/signup.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href="home.html" class="logo">
+        <img src="../assets/images/logo.png" alt="Localinary Logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="plan.html">Plan</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>SIGN UP</h2>
+      <form id="signupForm" novalidate>
+
+        <!-- First Name & Last Name -->
+        <div class="input-row">
+          <div class="floating-label-group">
+            <input type="text" id="firstName" name="firstName" placeholder=" " required />
+            <label for="firstName">First Name</label>
+          </div>
+
+          <div class="floating-label-group">
+            <input type="text" id="lastName" name="lastName" placeholder=" " required />
+            <label for="lastName">Last Name</label>
+          </div>
+        </div>
+
+        <!-- Contact & Location -->
+        <div class="input-row">
+          <div class="floating-label-group">
+            <input type="tel" id="contact" name="contact" placeholder=" " required pattern="[0-9]{11}" />
+            <label for="contact">Contact No.</label>
+          </div>
+
+          <div class="floating-label-group">
+            <input type="text" id="location" name="location" placeholder=" " required />
+            <label for="location">Location</label>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="floating-label-group">
+          <input type="email" id="email" name="email" placeholder=" " required />
+          <label for="email">Email</label>
+        </div>
+
+        <!-- Password -->
+        <div class="floating-label-group">
+          <input type="password" id="password" name="password" placeholder=" " required minlength="8" />
+          <label for="password">Password</label>
+          <div class="password-strength">
+            <div id="strengthBar" class="password-strength-bar"></div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">SIGN UP</button>
+
+        <!-- Login Link -->
+        <div class="login-link">
+          Already have an account? <a href="#">LOGIN</a>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="image-box">
+      <img src="../assets/images/signup&login.png" alt="Sign Up Image" />
+    </div>
+  </div>
+
+  <script src="../scripts/signup.js"></script>
+</body>
+</html>
